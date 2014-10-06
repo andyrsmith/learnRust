@@ -2,7 +2,7 @@ Learning Rust
 =========
 
 Just learning Rust.
-This currently works in Rust version 0.11
+This currently works in Rust version 0.12
 
 How to Compile a Rust program
 ----
