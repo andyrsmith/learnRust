@@ -1,13 +1,22 @@
 ///Takes a random number which it calls a pin, and then tells you how fast it will take to crack it.
 extern crate time;
+//look a struct
+struct Point {
+  x: int,
+  y: int,
+}
+
 fn main(){
   //i means integer
   let (code, five) = (111995i, 5i);
   
-  let x = (1i,2i,3i);
-  let y = (1i,2i,3i);
-
-  if x == y {
+  let first_match = (1i,2i,3i);
+  let second_match = (1i,2i,3i);
+  //let's assign values from a struct
+  let point = Point {x: 1i, y: 6i};
+  //calling value from struct
+  println!("The points are at {} and {}", point.x, point.y);
+  if first_match == second_match {
     println!("A match!");
   } else {
     println!("nope");
