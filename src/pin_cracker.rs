@@ -1,5 +1,7 @@
+///Takes a random number which it calls a pin, and then tells you how fast it will take to crack it.
 extern crate time;
 fn main(){
+  //i means integer
   let code = 111995i;
 
   let start = time::precise_time_s();
@@ -10,7 +12,8 @@ fn main(){
 
   let elapsed = stop - start;
   println!("Looks like it can be cracked in {} seconds ", elapsed);
-  
+ 
+  //returns either 10 or 5 and stores it in variable y
   let y = if code < 10000 { 10i } else { 5i };
   println!("Look at this number {}", y);
 }
