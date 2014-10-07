@@ -1,0 +1,9 @@
+[package]
+
+name = "pin_cracker"
+version = "0.0.1"
+authors = [ "Andy Smith smith780@gmail.com>" ]
+
+[[bin]]
+
+name = "pin_cracker"
