@@ -35,6 +35,9 @@ fn main(){
 
   enum_fun();
 
+  match_maker();
+
+  for_loop();
 }
 
 fn crack_pin(x: int, y: int){
@@ -101,3 +104,22 @@ fn just_a_tuple(){
   println!("thing1, thing2 = {}, {}", thing1, thing2);
 }
 
+fn match_maker(){
+  let matchy = 15i;
+
+  match matchy {
+    1 => println!("1"),
+    2 => println!("2"),
+    3 => println!("3"),
+    4 => println!("4"),
+    5 => println!("5"),
+   _ => println!("no match"),
+  }
+}
+
+fn for_loop(){
+
+  for x in range(0i, 10i) {
+    println!("{:d}", x);
+  }
+}
