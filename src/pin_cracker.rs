@@ -38,6 +38,10 @@ fn main(){
   match_maker();
 
   for_loop();
+
+  fun_with_strings();
+
+  this_vector();
 }
 
 fn crack_pin(x: int, y: int){
@@ -121,5 +125,31 @@ fn for_loop(){
 
   for x in range(0i, 10i) {
     println!("{:d}", x);
+  }
+}
+
+fn fun_with_strings() {
+  let mut s = "Hello".to_string();
+  let s1 = "Hello".to_string();
+
+  println!("{}", s);
+
+  s.push_str(" world.");
+  println!("{}", s);
+
+  takes_slice(s1.as_slice());
+}
+
+fn takes_slice(slice: &str) {
+  println!("Got: {}", slice);
+}
+
+fn this_vector() {
+  let mut nums = vec![1i, 2i, 7i];
+  nums.push(4i);
+  let slice = nums.as_slice();
+  println!("Here is the slice {}", slice);
+  for i in nums.iter() {
+    println!("{}", i);
   }
 }
